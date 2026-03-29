@@ -28,6 +28,7 @@ alias gps='git push'
 alias gpf='git push -f'
 alias gst='git stash'
 alias gplr='git pull --rebase'
+alias cm='chezmoi'
 
 # Starship の init。Zim より優先するために後ろに定義
 eval "$(starship init zsh)"

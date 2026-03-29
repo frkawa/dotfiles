@@ -11,5 +11,6 @@
     "files.exclude": {
         "**/.git": false
     },
-    "workbench.iconTheme": "material-icon-theme"
+    "workbench.iconTheme": "material-icon-theme",
+    "window.title": "${rootName}${separator}${activeEditorShort}${separator}${appName}"
 }
