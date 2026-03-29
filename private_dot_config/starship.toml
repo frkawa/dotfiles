@@ -1,0 +1,36 @@
+add_newline = true
+# 右端に時刻を出すためにformat設定が必要
+format = """
+$directory$git_branch$git_status$fill$time
+$character"""
+
+[fill]
+symbol = " "
+
+[time]
+disabled = false
+format = '[$time]($style)'
+time_format = '%Y/%m/%d %H:%M:%S'
+style = "dimmed white"
+
+[directory]
+truncate_to_repo = false
+truncation_length = 0    # 0で絶対パス表示
+
+[git_branch]
+symbol = " "
+format = '[[ $symbol$branch ](bg:yellow fg:black)]($style)'
+style = "bg:yellow fg:black"
+
+[git_status]
+format = '([[ $ahead_behind$modified$untracked$staged ](fg:green)]($style))'
+style = "fg:green"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+modified = "!${count}"
+untracked = "?${count}"
+staged = "+${count}"
+
+[character]
+success_symbol = "🕊️"
+error_symbol = "😢"

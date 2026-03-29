@@ -1,0 +1,5 @@
+# テーマ
+theme = Arthur
+
+# 背景を透過
+background-opacity = 0.7

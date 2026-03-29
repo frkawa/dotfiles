@@ -1,0 +1,15 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    // スペースを・で表示
+    "editor.renderWhitespace": "all",
+    // タブ幅を2スペースに設定
+    "editor.tabSize": 2,
+    // ファイル保存時に自動でフォーマット
+    "editor.formatOnSave": true,
+    // 他のウィンドウに切り替えで自動保存
+    "files.autoSave": "onFocusChange",
+    "files.exclude": {
+        "**/.git": false
+    },
+    "workbench.iconTheme": "material-icon-theme"
+}
