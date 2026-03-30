@@ -19,6 +19,9 @@ chezmoi の規則に従い、ファイル名をプレフィックスでエンコ
 | `private_dot_config/private_karabiner/private_karabiner.json` | `~/.config/karabiner/karabiner.json` |
 | `private_Library/private_Application Support/private_Code/User/settings.json` | `~/Library/Application Support/Code/User/settings.json` |
 | `private_Library/private_Application Support/com.mitchellh.ghostty/config.ghostty` | `~/Library/Application Support/com.mitchellh.ghostty/config.ghostty` |
+| `dot_claude/settings.json` | `~/.claude/settings.json` |
+| `dot_claude/scripts/status_line/executable_statusline.py` | `~/.claude/scripts/status_line/statusline.py` |
+| `dot_claude/skills/commit/SKILL.md` | `~/.claude/skills/commit/SKILL.md` |
 
 ## chezmoi 運用方針
 
