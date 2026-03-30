@@ -1,7 +1,6 @@
 ---
 name: commit
-description: Conventional Commits形式でgitコミットを作成する。/commitと明示的に呼び出したときのみ動作。
-disable-model-invocation: true
+description: Conventional Commits形式でgitコミットを作成する。git commitを行う時に呼び出す。
 ---
 
 # commit

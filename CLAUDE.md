@@ -20,6 +20,25 @@ chezmoi の規則に従い、ファイル名をプレフィックスでエンコ
 | `private_Library/private_Application Support/private_Code/User/settings.json` | `~/Library/Application Support/Code/User/settings.json` |
 | `private_Library/private_Application Support/com.mitchellh.ghostty/config.ghostty` | `~/Library/Application Support/com.mitchellh.ghostty/config.ghostty` |
 
+## chezmoi 運用方針
+
+設定ファイルを変更する場合は **sourceディレクトリを正（source of truth）** とする。
+
+### 変更フロー
+
+1. `chezmoi edit <ターゲットパス>` でsourceファイルを編集
+2. `chezmoi apply` でターゲットに反映
+3. commitスキルで変更を記録
+
+### `chezmoi add` の用途
+
+新規ファイルをchezmoi管理に追加する場合のみ使用する。
+ターゲットを直接編集してsourceに逆反映する用途では使わない。
+
+### ファイルの追加・削除時
+
+`chezmoi add` で管理対象を追加、または管理対象からファイルを削除した場合は、上記「管理しているファイル」の一覧を必ず更新する。
+
 ## ツール・環境
 
 - シェル: zsh
