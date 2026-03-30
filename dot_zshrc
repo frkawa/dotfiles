@@ -1,6 +1,7 @@
 export PATH="$HOME/.local/bin:$PATH"
 
 eval "$(mise activate zsh)"
+eval "$(direnv hook zsh)"
 
 # --- Zim のインストール時の初期セットアップ START ---
 
